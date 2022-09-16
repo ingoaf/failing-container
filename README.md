@@ -3,10 +3,10 @@ Small container with a comprehensive Dockerfile which will write a log line and 
 
 ## Get Started
 1. `docker build -t failing-container .`
-2. `docker run failing-container`
+2. `docker run --name failing-container failing-container`
 
 You can verify the failure of the container by using 
 
-`docker inspect name-of-your-container --format='{{.State.ExitCode}}'` 
+`docker inspect failing-container --format='{{.State.ExitCode}}'` 
 
 Now run the container in your system and see what happens!
