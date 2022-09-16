@@ -7,6 +7,6 @@ Small container with a comprehensive Dockerfile which will write a log line and 
 
 You can verify the failure of the container by using 
 
-`docker inspect priceless_shamir --format='{{.State.ExitCode}}'` 
+`docker inspect name-of-your-container --format='{{.State.ExitCode}}'` 
 
 Now run the container in your system and see what happens!
